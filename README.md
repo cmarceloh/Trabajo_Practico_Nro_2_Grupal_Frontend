@@ -154,6 +154,7 @@ En cumplimiento de las pautas de cátedra para el nivel **Propone**, se detalla 
 
 ### Alcance de la Asistencia:
 - **Lo que asistió la IA:** Estructuración de código repetitivo de componentes en React, optimización de consultas a la API abierta y refinamiento de la redacción documental técnica en formato Markdown.
+- **Revisión y correcciones posteriores:** También se utilizó Copilot para revisar y corregir detalles de la interfaz generada con Google Antigravity, incluyendo el diseño responsive del perfil y la cabecera, la simplificación de la identidad visual y la eliminación de texto explicativo innecesario en la sección del clima. Los cambios fueron revisados y validados por el equipo.
 - **Lo que fue creado por el equipo:** La arquitectura conceptual, la autoría de los datos personales y biografías, las decisiones visuales, la validación funcional en el navegador y la toma de decisiones metodológicas.
 
 ---

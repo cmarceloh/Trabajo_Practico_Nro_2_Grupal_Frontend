@@ -40,23 +40,11 @@
   letter-spacing: 0.05em;
 }
 
-.logo-text {
-  display: flex;
-  flex-direction: column;
-}
-
 .logo-main {
   font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: -0.02em;
   color: var(--nav-text);
-}
-
-.logo-sub {
-  font-size: 0.72rem;
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
 }
 
 .sidebar-close-btn {

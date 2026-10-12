@@ -17,6 +17,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  min-width: 0;
 }
 
 .header-menu-btn {
@@ -44,6 +45,7 @@
   align-items: center;
   gap: 0.5rem;
   font-size: 0.9rem;
+  min-width: 0;
 }
 
 .breadcrumb-root {
@@ -119,8 +121,12 @@
   .app-header {
     padding: 0 1rem;
   }
+  .header-badge {
+    display: none;
+  }
   .breadcrumb-current {
-    max-width: 160px;
+    max-width: 120px;
+    min-width: 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

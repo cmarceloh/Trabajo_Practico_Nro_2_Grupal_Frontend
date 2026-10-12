@@ -39,25 +39,6 @@ export default function Weather() {
         </p>
       </div>
 
-      {/* Tarjeta explicativa de la API (Criterio 12) */}
-      <div className="api-info-card">
-        <div className="api-info-header">
-          <span className="api-icon">🌐</span>
-          <div>
-            <h3>¿Qué aporta esta API a la aplicación?</h3>
-            <p className="api-url-info">
-              Consumida directamente desde <code>Open-Meteo API</code> (sin clave privada / CORS abierto).
-            </p>
-          </div>
-        </div>
-        <p className="api-explanation">
-          Proporciona <strong>telemetría ambiental y reporte meteorológico en tiempo real</strong> para
-          monitorear las condiciones climáticas de nuestra sede central (temperatura real, sensación térmica,
-          humedad relativa, velocidad de los vientos y condición del cielo mediante códigos WMO normalizados).
-          Permite evaluar la viabilidad de operaciones en terreno, protocolos de confort térmico y eficiencia energética en servidores locales.
-        </p>
-      </div>
-
       {/* ESTADO 1: CARGANDO (Spinner y mensaje controlado) */}
       {loading && (
         <div className="weather-state-card weather-loading-state">

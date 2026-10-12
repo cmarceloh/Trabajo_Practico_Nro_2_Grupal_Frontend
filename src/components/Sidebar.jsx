@@ -24,10 +24,7 @@ export default function Sidebar({ isOpen, onClose }) {
         <div className="sidebar-brand">
           <NavLink to="/" onClick={onClose} className="sidebar-logo">
             <span className="logo-badge">G14</span>
-            <div className="logo-text">
-              <span className="logo-main">Grupo 14</span>
-              <span className="logo-sub">Desarrollo de Sistemas</span>
-            </div>
+            <span className="logo-main">Grupo 14</span>
           </NavLink>
           <button
             className="sidebar-close-btn"

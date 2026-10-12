@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="footer-col">
           <div className="footer-brand">
             <span className="footer-logo-badge">G14</span>
-            <span className="footer-logo-title">Grupo 14 — Desarrollo de Sistemas</span>
+            <span className="footer-logo-title">Grupo 14</span>
           </div>
           <p className="footer-desc">
             Soluciones digitales escalables, diseño centrado en el usuario e ingeniería web con estándares modernos de la industria.
