@@ -34,8 +34,8 @@ export default function Weather() {
         <div className="badge badge-accent">API Pública & Telemetría Edilicia</div>
         <h1 className="weather-title">Sede Central & Reporte Climático en Vivo</h1>
         <p className="weather-desc">
-          En esta sección se simula el centro de operaciones físico de <strong>Grupo 14</strong>,
-          ubicado estratégicamente en la <strong>Ciudad Autónoma de Buenos Aires (CABA)</strong>.
+          El centro de operaciones físico de <strong>Grupo 14</strong> está ubicado en{' '}
+          <strong>Av. Jujuy 255, CABA</strong>.
         </p>
       </div>
 
@@ -70,7 +70,7 @@ export default function Weather() {
             <div className="weather-hero-top">
               <div className="location-info">
                 <span className="location-tag">📍 Sede Central Grupo 14</span>
-                <h2 className="location-name">Ciudad Autónoma de Buenos Aires</h2>
+                <h2 className="location-name">Av. Jujuy 255, CABA</h2>
                 <span className="location-coords">
                   Lat: {data.latitud}° | Long: {data.longitud}° | Alt: {data.elevacion}m
                 </span>
