@@ -1,0 +1,194 @@
+/* ==========================================================================
+   ESTILOS GLOBALES - GRUPO 14 DESARROLLO DE SISTEMAS
+   Migración del TP1 a React con soporte modular, variables CSS y responsive
+   ========================================================================== */
+
+:root {
+  --bg: #f4f3ef;
+  --surface: #ffffff;
+  --surface-2: #ecebe6;
+  --surface-hover: #e5e4de;
+  --text: #202321;
+  --muted: #70746f;
+  --line: #d7d7d1;
+  --accent: #168276;
+  --accent-light: #e8f5f3;
+  --accent-dark: #0e665d;
+  --nav: #202522;
+  --nav-text: #f7f7f3;
+  --nav-hover: #2c332f;
+  --nav-active: #168276;
+  --sidebar-w: 270px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.12);
+  --transition: all 0.25s ease;
+}
+
+body.dark-mode {
+  --bg: #111513;
+  --surface: #191d1b;
+  --surface-2: #222824;
+  --surface-hover: #2a322d;
+  --text: #f0f0ea;
+  --muted: #a5aaa6;
+  --line: #363c38;
+  --accent: #43b8aa;
+  --accent-light: #163632;
+  --accent-dark: #31968b;
+  --nav: #0b0e0d;
+  --nav-text: #f4f4ef;
+  --nav-hover: #171d1a;
+  --nav-active: #43b8aa;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  background-image:
+    linear-gradient(rgba(32, 35, 33, .025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(32, 35, 33, .025) 1px, transparent 1px);
+  background-size: 32px 32px;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  transition: background-color .3s ease, color .3s ease;
+  overflow-x: hidden;
+}
+
+body.dark-mode {
+  background-image:
+    linear-gradient(rgba(240, 240, 234, .025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(240, 240, 234, .025) 1px, transparent 1px);
+}
+
+/* Tipografía y Encabezados */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--accent-dark);
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Estilos de Botones Globales (TP1 + Nuevos) */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: var(--accent);
+  color: #ffffff;
+  padding: 0.65rem 1.25rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background: var(--accent-dark);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: var(--surface-2);
+  color: var(--text);
+  padding: 0.6rem 1.15rem;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  font-size: 0.95rem;
+  border: 1px solid var(--line);
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  background: var(--surface-hover);
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  background: var(--surface-2);
+  color: var(--text);
+  border: 1px solid var(--line);
+}
+
+.badge-accent {
+  background: var(--accent-light);
+  color: var(--accent);
+  border-color: rgba(22, 130, 118, 0.25);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.35s ease-out forwards;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

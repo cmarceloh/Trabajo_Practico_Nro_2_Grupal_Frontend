@@ -1,0 +1,132 @@
+[
+  {
+    "id": "team-carlos",
+    "nombre": "Carlos Marcelo Hernandez",
+    "rol": "Desarrollador Full Stack & Técnico de Hardware",
+    "avatar": "/img/marcelo/marcelo.jpg",
+    "edad": 50,
+    "ubicacion": "Barracas, Ciudad Autónoma de Buenos Aires",
+    "github": "https://github.com/cmarceloh",
+    "usuarioGithub": "cmarceloh",
+    "biografia": "Estudiante de la Tecnicatura Superior en Desarrollo de Software en el IFTS 29. Especialista técnico de computadoras, celulares y tablets con sólida trayectoria y visión analítica. Apasionado por la tecnología, la arquitectura de sistemas y los videojuegos tácticos competitivos (Tom Clancy's Rainbow Six Siege, eFootball 2027).",
+    "especialidades": ["Arquitectura Web", "Soporte y Hardware", "Desarrollo Backend", "Bases de Datos"],
+    "habilidades": [
+      "HTML5", "CSS3", "JavaScript", "Python", "C#", "Kotlin",
+      "MySQL", "SQLite", "Visual Basic", "Unity 2D", "AutoCAD",
+      "Office 365", "Adobe Photoshop", "Git & GitHub", "Lotus 1-2-3"
+    ],
+    "hitos": [
+      "Configuración y estructuración inicial del repositorio grupal Git.",
+      "Desarrollo y diseño de la sección de perfil y componentes de medios.",
+      "Optimización del rendimiento de activos estáticos y soporte multiplataforma."
+    ],
+    "favoritos": {
+      "peliculas": [
+        { "titulo": "Star Wars: Episodio V - El imperio contraataca", "img": "/img/marcelo/marcelo-peli1.jpg", "anio": "1980" },
+        { "titulo": "Matrix", "img": "/img/marcelo/marcelo-peli2.jpg", "anio": "1999" },
+        { "titulo": "El señor de los anillos: El retorno del rey", "img": "/img/marcelo/marcelo-peli3.jpg", "anio": "2003" }
+      ],
+      "discos": [
+        { "titulo": "The Dark Side of the Moon - Pink Floyd", "img": "/img/marcelo/marcelo-disco1.jpg", "anio": "1973" },
+        { "titulo": "Back in Black - AC/DC", "img": "/img/marcelo/marcelo-disco2.jpg", "anio": "1980" },
+        { "titulo": "Oktubre - Patricio Rey y sus Redonditos de Ricota", "img": "/img/marcelo/marcelo-disco3.jpg", "anio": "1986" }
+      ]
+    }
+  },
+  {
+    "id": "team-valeria",
+    "nombre": "Valeria Noemi Fernandez",
+    "rol": "Diseñadora UI/UX & Desarrolladora Frontend",
+    "avatar": "/img/valeria/Valerita.jpg",
+    "edad": 45,
+    "ubicacion": "Ciudad Autónoma de Buenos Aires",
+    "github": "https://github.com/Valuchi81",
+    "usuarioGithub": "Valuchi81",
+    "biografia": "Estudiante de Desarrollo de Software en el IFTS 29 orientada al diseño de interfaces limpias, maquetación accesible y experiencia de usuario. Enfoque minucioso en la usabilidad, prototipado interactivo y traducción de especificaciones visuales a código frontend escalable.",
+    "especialidades": ["Diseño de Interfaces (UI)", "Experiencia de Usuario (UX)", "Maquetación Responsive", "Prototipado Figma"],
+    "habilidades": [
+      "Figma", "AutoCAD", "Python", "PSeInt", "HTML5", "CSS3", "JavaScript", "Git & GitHub"
+    ],
+    "hitos": [
+      "Definición estética de paleta neutra, tipografía Inter y contrastes WCAG.",
+      "Diseño y maquetación de tarjetas con jerarquía visual cuidada.",
+      "Armado de prototipos visuales y verificación de interfaces fluidas."
+    ],
+    "favoritos": {
+      "peliculas": [
+        { "titulo": "Orgullo y prejuicio", "img": "/img/valeria/valeria-peli1.webp", "anio": "2005" },
+        { "titulo": "En busca de la felicidad", "img": "/img/valeria/valeria-peli2.jpg", "anio": "2006" },
+        { "titulo": "Hasta el último hombre", "img": "/img/valeria/valeria-peli3.jpg", "anio": "2016" }
+      ],
+      "discos": [
+        { "titulo": "Big Ones - Aerosmith", "img": "/img/valeria/valeria-disco1.jpg", "anio": "1994" },
+        { "titulo": "Abbey Road - The Beatles", "img": "/img/valeria/valeria-disco2.jpg", "anio": "1969" },
+        { "titulo": "Canción Animal - Soda Stereo", "img": "/img/valeria/valeria-disco3.jpg", "anio": "1990" }
+      ]
+    }
+  },
+  {
+    "id": "team-micaela",
+    "nombre": "Micaela Laila Gargiulo",
+    "rol": "Desarrolladora de Software & Lógica Frontend",
+    "avatar": "/img/micaela/foto-micaela.jpg",
+    "edad": 28,
+    "ubicacion": "Ciudad Autónoma de Buenos Aires",
+    "github": "https://github.com/MicaelaGargiulo",
+    "usuarioGithub": "MicaelaGargiulo",
+    "biografia": "Estudiante de la Tecnicatura Superior en Desarrollo de Software en el IFTS 29. Apasionada por la resolución lógica de algoritmos, estructuras de datos, persistencia relacional y programación estructurada.",
+    "especialidades": ["Lógica Algorítmica", "Bases de Datos Relacionales", "Gestión de Estado React", "Testing Funcional"],
+    "habilidades": [
+      "Python", "SQL", "PSeInt", "HTML5", "CSS3", "JavaScript", "React", "Git & GitHub"
+    ],
+    "hitos": [
+      "Implementación de lógica de filtrado reactivo y búsqueda en tiempo real.",
+      "Estructuración de componentes modulares y paso fluido de props.",
+      "Control de consistencia de datos y normalización de colecciones JSON."
+    ],
+    "favoritos": {
+      "peliculas": [
+        { "titulo": "Fragmentado", "img": "/img/micaela/pelicula-micaela1.jpg", "anio": "2016" },
+        { "titulo": "Harry Potter y el prisionero de Azkaban", "img": "/img/micaela/pelicula-micaela2.jpg", "anio": "2004" },
+        { "titulo": "It (Eso)", "img": "/img/micaela/pelicula-micaela3.jpg", "anio": "2017" }
+      ],
+      "discos": [
+        { "titulo": "Oscuro Éxtasis - WOS", "img": "/img/micaela/disco-micaela1.jpg", "anio": "2021" },
+        { "titulo": "Post Mortem - Dillom", "img": "/img/micaela/disco-micaela2.jpg", "anio": "2021" },
+        { "titulo": "Trinchera - Babasónicos", "img": "/img/micaela/disco-micaela3.jpg", "anio": "2022" }
+      ]
+    }
+  },
+  {
+    "id": "team-damaris",
+    "nombre": "Damaris Rodriguez",
+    "rol": "Desarrolladora Backend & QA Engineer",
+    "avatar": "/img/damaris/damaris-foto.jpg",
+    "edad": 22,
+    "ubicacion": "Mar del Plata, Buenos Aires",
+    "github": "https://github.com/damrodriguezz",
+    "usuarioGithub": "damrodriguezz",
+    "biografia": "Estudiante de Desarrollo de Software en el IFTS 29 con experiencia activa en la industria como QA Analyst. Enfocada en calidad de software, validación funcional, APIs RESTful y arquitectura orientada a servicios de backend.",
+    "especialidades": ["Control de Calidad (QA)", "Arquitectura Backend", "Integración de APIs", "Validación y Test Cases"],
+    "habilidades": [
+      "HTML5", "CSS3", "JavaScript", "C#", "SQL", "Git & GitHub", "REST APIs", "Postman"
+    ],
+    "hitos": [
+      "Integración de la API meteorológica de Open-Meteo y manejo riguroso de errores.",
+      "Pruebas de navegación en escenarios de estrés y recarga profunda en Vercel.",
+      "Diseño de la estructura de Bitácora interactiva y trazabilidad de cambios."
+    ],
+    "favoritos": {
+      "peliculas": [
+        { "titulo": "Pulp Fiction", "img": "/img/damaris/damaris-pelicula1.jpg", "anio": "1994" },
+        { "titulo": "Scarface", "img": "/img/damaris/damaris-pelicula2.jpg", "anio": "1983" },
+        { "titulo": "Kill Bill: Vol. 1", "img": "/img/damaris/damaris-pelicula3.jpg", "anio": "2003" }
+      ],
+      "discos": [
+        { "titulo": "AM - Arctic Monkeys", "img": "/img/damaris/damaris-disco1.jpg", "anio": "2013" },
+        { "titulo": "Favourite Worst Nightmare - Arctic Monkeys", "img": "/img/damaris/damaris-disco2.jpg", "anio": "2007" },
+        { "titulo": "Whatever People Say I Am, That's What I'm Not", "img": "/img/damaris/damaris-disco3.jpg", "anio": "2006" }
+      ]
+    }
+  }
+]

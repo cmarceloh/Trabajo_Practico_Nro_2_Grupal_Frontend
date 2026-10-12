@@ -1,0 +1,102 @@
+[
+  {
+    "id": "bit-01",
+    "titulo": "Decisiones de Diseño y Organización Inicial",
+    "fecha": "Agosto 2026",
+    "etapa": "TP1 - Estructuración y Maquetación",
+    "autor": "Equipo Grupo 14",
+    "resumen": "Definición de identidad, repositorio central en GitHub y paleta de colores corporativa.",
+    "contenido": "Optamos por un diseño de colores neutros y modernos, utilizando tonos grafito (#202321, #111513) combinados con verde azulado / teal (#168276, #43b8aa). Nos organizamos creando un repositorio central público en GitHub. Cada integrante clonó el proyecto localmente para trabajar en su tarjeta y luego hacer los respectivos commits, asegurando la participación activa de todo el equipo en el historial de control de versiones.",
+    "aprendizajes": ["Configuración colaborativa de Git", "Variables CSS para consistencia gráfica", "Coordinación de ramas y commits"]
+  },
+  {
+    "id": "bit-02",
+    "titulo": "Dificultades Encontradas y Desafíos de Layout",
+    "fecha": "Agosto 2026",
+    "etapa": "TP1 - Maquetación y CSS",
+    "autor": "Equipo Grupo 14",
+    "resumen": "Resolución de estructura plana de archivos y diseño adaptable multi-dispositivo.",
+    "contenido": "Uno de los mayores desafíos iniciales fue comprender la estructura de archivos en la raíz que pedía la consigna, ya que nuestra intuición era agrupar los perfiles individuales en una carpeta externa. Además, al aplicar el diseño adaptable, la distribución de los elementos (como la grilla de tarjetas) debía cuidarse mediante CSS Grid para no desbordar en pantallas de celulares.",
+    "aprendizajes": ["CSS Grid fraccionado y auto-fit", "Resolución de desbordes horizontales", "Convenciones estrictas de entrega académica"]
+  },
+  {
+    "id": "bit-03",
+    "titulo": "Soluciones y Cambios Aplicados en la Navegación",
+    "fecha": "Agosto 2026",
+    "etapa": "TP1 - Navegación y Usabilidad",
+    "autor": "Equipo Grupo 14",
+    "resumen": "Reestructuración del árbol de archivos y navbar compartida sin dependencia de botón 'Atrás'.",
+    "contenido": "Reestructuramos el directorio para dejar todos los HTML individuales en la raíz, junto al index y la bitácora. Para solucionar la navegación sin depender del botón 'Atrás' del navegador, implementamos un menú superior global en todas las páginas. En cuanto al responsive, agregamos Media Queries precisas en 400px, 900px y 1200px para garantizar adaptabilidad total.",
+    "aprendizajes": ["Navegación cerrada y accesible", "Estrategia mobile-first con media queries", "Consistencia visual transversal"]
+  },
+  {
+    "id": "bit-04",
+    "titulo": "Interactividad y Experiencia de Usuario: Modo Oscuro con LocalStorage",
+    "fecha": "Agosto 2026",
+    "etapa": "TP1 - JavaScript y Persistencia",
+    "autor": "Carlos Hernandez & Valeria Fernandez",
+    "resumen": "Persistencia de tema visual en el almacenamiento local del navegador.",
+    "contenido": "Implementamos un sistema de Modo Oscuro persistente utilizando JavaScript y localStorage, permitiendo que la preferencia del usuario se conserve al navegar de forma fluida entre la portada, la bitácora y las tarjetas individuales. Asimismo, ajustamos la paleta hacia tonos mate para evitar la fatiga visual, incorporamos una ilustración vectorial interactiva con formas orgánicas y animaciones CSS avanzadas en la portada, y rediseñamos el encabezado con un logotipo interactivo para el Grupo 14.",
+    "aprendizajes": ["Persistencia en localStorage", "Manejo de eventos DOM", "Transición suave de propiedades de color"]
+  },
+  {
+    "id": "bit-05",
+    "titulo": "Inicio de Migración a React y Vite: Arquitectura Modular",
+    "fecha": "Octubre 2026",
+    "etapa": "TP2 - Arquitectura React",
+    "autor": "Carlos Hernandez & Micaela Gargiulo",
+    "resumen": "Transición de páginas estáticas HTML/CSS a Single Page Application con React Router v6.",
+    "contenido": "Iniciamos la reescritura del proyecto migrando desde HTML plano a una arquitectura de componentes modulares con React y Vite. Configuramos React Router v6 con un MainLayout que integra Sidebar compartida, encabezado con menú hamburguesa colapsable y Outlet dinámico. Se preparó la estructura de carpetas (/components, /pages, /data, /services) para lograr máxima separación de responsabilidades.",
+    "aprendizajes": ["Configuración de Vite y bundler ESM", "Enrutamiento declarativo con React Router v6", "Layout jerárquico con Outlet"]
+  },
+  {
+    "id": "bit-06",
+    "titulo": "Reutilización de Componentes: Perfil Dinámico mediante Props y Rutas",
+    "fecha": "Octubre 2026",
+    "etapa": "TP2 - Componentes y Props",
+    "autor": "Micaela Gargiulo & Valeria Fernandez",
+    "resumen": "Unificación de 4 archivos HTML individuales en un único componente reutilizable.",
+    "contenido": "Transformamos las 4 páginas HTML separadas (carlos.html, valeria.html, micaela.html, damaris.html) en un componente React reutilizable 'ProfilePage' con ruta dinámica '/perfil/:id'. El componente recibe o busca los datos desde un archivo centralizado integrantes.json, manteniendo fielmente los textos, fotografías, habilidades y medios favoritos originales, e incorporando pestañas interactivas de contenidos.",
+    "aprendizajes": ["Hook useParams para rutas dinámicas", "Reutilización eficiente con props", "Renderizado condicional y pestañas interactivas"]
+  },
+  {
+    "id": "bit-07",
+    "titulo": "Catálogo Dinámico de 22 Servicios: Búsqueda y Filtrado Reactivo",
+    "fecha": "Octubre 2026",
+    "etapa": "TP2 - Estado y Filtrado de Datos",
+    "autor": "Carlos Hernandez & Micaela Gargiulo",
+    "resumen": "Creación de 22 registros de servicios y filtros en tiempo real con estado vacío.",
+    "contenido": "Estructuramos un catálogo de 22 servicios y proyectos de desarrollo web en formato JSON. Implementamos una interfaz con barra de búsqueda en tiempo real y selector de categoría mediante useState y useMemo. Cada tarjeta cuenta con un acordeón expandible/contraíble para visualizar detalles técnicos, cliente y alcance. Se agregó manejo de estado vacío con mensaje amigable y botón para restablecer filtros.",
+    "aprendizajes": ["Gestión de filtros combinados en React", "Estado local para acordeones de tarjetas", "Optimización de filtrado sin mutación"]
+  },
+  {
+    "id": "bit-08",
+    "titulo": "Integración de Telemetría Ambiental: API Pública de Clima Open-Meteo",
+    "fecha": "Octubre 2026",
+    "etapa": "TP2 - Consumo de APIs y Ciclo de Vida",
+    "autor": "Damaris Rodriguez & Valeria Fernandez",
+    "resumen": "Consumo de API meteorológica sin API Key para la Sede Central en CABA con estados y reintento.",
+    "contenido": "Diseñamos la sección 'Sede Central & Clima' simulando la oficina operativa de Grupo 14 en la Ciudad Autónoma de Buenos Aires. Conectamos la aplicación con la API pública de Open-Meteo mediante useEffect y la API Fetch. Implementamos de manera estricta los 3 estados fundamentales: cargando (con indicador visual), error controlado (con alerta explicativa) y éxito (con métricas de temperatura, sensación térmica, humedad, viento y condiciones del cielo). Agregamos botón de recarga manual para actualizar los datos en tiempo real.",
+    "aprendizajes": ["Ciclo de vida y efectos con useEffect", "Manejo defensivo de errores en promesas", "Transformación de códigos meteorológicos WMO a lenguaje humano"]
+  },
+  {
+    "id": "bit-09",
+    "titulo": "Visualizador Interactivo del Árbol de Renderizado de Componentes",
+    "fecha": "Octubre 2026",
+    "etapa": "TP2 - Comprensión Teórica y Metodológica",
+    "autor": "Carlos Hernandez & Damaris Rodriguez",
+    "resumen": "Representación interactiva de la jerarquía real de componentes en tiempo de ejecución.",
+    "contenido": "Construimos un árbol de renderizado interactivo que plasma con precisión la arquitectura de la aplicación (App -> Layout -> Sidebar / Header -> Outlet -> Pages -> Cards). Utilizando estado local en cada nodo, permitimos que el usuario colapse y expanda ramas del árbol con un clic, explorando props, hooks asociados y la función de cada componente según los lineamientos teóricos de la cátedra.",
+    "aprendizajes": ["Estructuras recursivas de componentes en React", "Modelado mental del DOM virtual y árbol de componentes", "Interacción declarativa de nodos jerárquicos"]
+  },
+  {
+    "id": "bit-10",
+    "titulo": "Despliegue Continuo en Vercel y Prevención de Errores 404 en SPA",
+    "fecha": "Octubre 2026",
+    "etapa": "TP2 - Producción y Entrega",
+    "autor": "Equipo Grupo 14",
+    "resumen": "Configuración de vercel.json con reescritura hacia index.html y validación de rutas.",
+    "contenido": "Para garantizar que cualquier usuario o evaluador pueda recargar directamente URLs profundas como '/perfil/team-carlos' o '/clima' sin toparse con el típico error 404 de servidores estáticos, creamos y testeamos el archivo vercel.json con reglas de reescritura (rewrites). Verificamos accesibilidad, rendimiento en Lighthouse y navegación fluida en desktop y dispositivos móviles.",
+    "aprendizajes": ["Configuración de servidores estáticos para SPAs", "Reglas de reescritura HTTP en Vercel", "Verificación cruzada de enlaces y navegación cerrada"]
+  }
+]
