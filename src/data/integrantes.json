@@ -22,14 +22,14 @@
     ],
     "favoritos": {
       "peliculas": [
-        { "titulo": "Star Wars: Episodio V - El imperio contraataca", "img": "/img/marcelo/marcelo-peli1.jpg", "anio": "1980" },
-        { "titulo": "Matrix", "img": "/img/marcelo/marcelo-peli2.jpg", "anio": "1999" },
-        { "titulo": "El señor de los anillos: El retorno del rey", "img": "/img/marcelo/marcelo-peli3.jpg", "anio": "2003" }
+        { "titulo": "24 horas (Serie)", "img": "/img/marcelo/marcelo-peli1.jpg", "anio": "1980" },
+        { "titulo": "Ira de Titanes", "img": "/img/marcelo/marcelo-peli2.jpg", "anio": "1999" },
+        { "titulo": "Hombre en llamas", "img": "/img/marcelo/marcelo-peli3.jpg", "anio": "2003" }
       ],
       "discos": [
-        { "titulo": "The Dark Side of the Moon - Pink Floyd", "img": "/img/marcelo/marcelo-disco1.jpg", "anio": "1973" },
-        { "titulo": "Back in Black - AC/DC", "img": "/img/marcelo/marcelo-disco2.jpg", "anio": "1980" },
-        { "titulo": "Oktubre - Patricio Rey y sus Redonditos de Ricota", "img": "/img/marcelo/marcelo-disco3.jpg", "anio": "1986" }
+        { "titulo": "Historias - La Beriso", "img": "/img/marcelo/marcelo-disco1.jpg", "anio": "1973" },
+        { "titulo": "Sueño Dorado - Abel Pintos", "img": "/img/marcelo/marcelo-disco2.jpg", "anio": "1980" },
+        { "titulo": "La Mosca y la Sopa - Patricio Rey y sus Redonditos de Ricota", "img": "/img/marcelo/marcelo-disco3.jpg", "anio": "1986" }
       ]
     }
   },
