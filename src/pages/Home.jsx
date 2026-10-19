@@ -53,10 +53,6 @@ export default function Home() {
         </div>
 
         <div className="hero-image-wrapper">
-          <div className="hero-card-floating">
-            <span className="floating-badge">✨ Grupo 14</span>
-            <p className="floating-text">React 18 + Vite + SPA Routing</p>
-          </div>
           <img
             src="/img/hero-imagen.png"
             alt="Ilustración corporativa de desarrollo web de Grupo 14"

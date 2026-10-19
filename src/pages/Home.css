@@ -117,39 +117,6 @@
   transform: translateY(-4px) scale(1.01);
 }
 
-.hero-card-floating {
-  position: absolute;
-  top: -15px;
-  left: -15px;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  padding: 0.75rem 1rem;
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-md);
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-  z-index: 2;
-  animation: floatAnim 4s ease-in-out infinite;
-}
-
-@keyframes floatAnim {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
-}
-
-.floating-badge {
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--accent);
-}
-
-.floating-text {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--text);
-}
-
 /* SECCIÓN EQUIPO */
 .team-section {
   display: flex;
