@@ -92,8 +92,8 @@
       ],
       "discos": [
         { "titulo": "Oscuro Éxtasis - WOS", "img": "/img/micaela/disco-micaela1.jpg", "anio": "2021" },
-        { "titulo": "Post Mortem - Dillom", "img": "/img/micaela/disco-micaela2.jpg", "anio": "2021" },
-        { "titulo": "Trinchera - Babasónicos", "img": "/img/micaela/disco-micaela3.jpg", "anio": "2022" }
+        { "titulo": "3er arco - Los piojos", "img": "/img/micaela/disco-micaela2.jpg", "anio": "1996" },
+        { "titulo": "AM - Arctic Monkeys", "img": "/img/micaela/disco-micaela3.jpg", "anio": "2013" }
       ]
     }
   },
