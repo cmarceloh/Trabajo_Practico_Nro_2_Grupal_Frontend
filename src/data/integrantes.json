@@ -59,9 +59,9 @@
         { "titulo": "Hasta el último hombre", "img": "/img/valeria/valeria-peli3.jpg", "anio": "2016" }
       ],
       "discos": [
-        { "titulo": "Big Ones - Aerosmith", "img": "/img/valeria/valeria-disco1.jpg", "anio": "1994" },
-        { "titulo": "Abbey Road - The Beatles", "img": "/img/valeria/valeria-disco2.jpg", "anio": "1969" },
-        { "titulo": "Canción Animal - Soda Stereo", "img": "/img/valeria/valeria-disco3.jpg", "anio": "1990" }
+        { "titulo": "Abbey Road - The Beatles", "img": "/img/valeria/valeria-disco1.jpg", "anio": "1969" },
+        { "titulo": "Big Ones - Aerosmith", "img": "/img/valeria/valeria-disco2.jpg", "anio": "1994" },
+        { "titulo": "These Days - Bon Jovi", "img": "/img/valeria/valeria-disco3.jpg", "anio": "1995" }
       ]
     }
   },

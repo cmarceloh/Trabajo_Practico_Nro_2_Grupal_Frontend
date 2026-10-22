@@ -336,6 +336,11 @@
   transition: transform 0.3s ease;
 }
 
+/* Mostrar completos los posters de las peliculas de Valeria */
+.media-poster-img[src^="/img/valeria/valeria-peli"] {
+    object-fit: contain;
+}
+
 .media-card:hover .media-poster-img {
   transform: scale(1.05);
 }
