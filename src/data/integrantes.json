@@ -123,9 +123,9 @@
         { "titulo": "Kill Bill: Vol. 1", "img": "/img/damaris/damaris-pelicula3.jpg", "anio": "2003" }
       ],
       "discos": [
-        { "titulo": "AM - Arctic Monkeys", "img": "/img/damaris/damaris-disco1.jpg", "anio": "2013" },
-        { "titulo": "Favourite Worst Nightmare - Arctic Monkeys", "img": "/img/damaris/damaris-disco2.jpg", "anio": "2007" },
-        { "titulo": "Whatever People Say I Am, That's What I'm Not", "img": "/img/damaris/damaris-disco3.jpg", "anio": "2006" }
+        { "titulo": "Ultraviolence - Lana del Rey", "img": "/img/damaris/damaris-disco1.jpg", "anio": "2014" },
+        { "titulo": "NO VAYAS A ATENDER CUANDO EL DEMONIO LLAMA - Lali", "img": "/img/damaris/damaris-disco2.jpg", "anio": "2025" },
+        { "titulo": "Gulp! - Patricio Rey y sus Redonditos de Ricota", "img": "/img/damaris/damaris-disco3.jpg", "anio": "1985" }
       ]
     }
   }
