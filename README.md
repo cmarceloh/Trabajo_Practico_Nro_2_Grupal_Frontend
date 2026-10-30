@@ -8,6 +8,7 @@
 > Aplicación web Single Page Application (SPA) desarrollada con React, Vite y React Router v6. Representa la evolución y migración del TP1 a una arquitectura modular orientada a componentes, incorporando consumo de APIs públicas, catálogo de datos locales con filtrado en tiempo real, árbol de renderizado interactivo y bitácora ampliada.
 
 🔗 **Sitio web publicado en Vercel:** [https://trabajo-practico-nro-2-grupal-front.vercel.app/](https://trabajo-practico-nro-2-grupal-front.vercel.app/)
+
 📦 **Repositorio GitHub:** [https://github.com/cmarceloh/Trabajo_Practico_Nro_2_Grupal_Frontend](https://github.com/cmarceloh/Trabajo_Practico_Nro_2_Grupal_Frontend)
 
 ---
