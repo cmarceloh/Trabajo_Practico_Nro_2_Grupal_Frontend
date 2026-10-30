@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 import './ComponentTree.css'
 
-// Modelo estructurado del árbol real de componentes de la aplicación
+// Esquema de la jerarquía de componentes implementada en la aplicación
 const initialTreeData = {
   id: 'root-app',
   nombre: 'App',
   tipo: 'Componente Raíz',
-  descripcion: 'Punto de entrada de la aplicación; inicializa ThemeProvider y BrowserRouter con las rutas declarativas.',
+  descripcion: 'Define las rutas de la aplicación y muestra MainLayout como estructura compartida. BrowserRouter y ThemeProvider se configuran en main.jsx.',
   props: 'ninguna',
-  hooks: ['useTheme'],
+  hooks: [],
   expanded: true,
   hijos: [
     {
@@ -16,7 +16,7 @@ const initialTreeData = {
       nombre: 'MainLayout',
       tipo: 'Layout Estructural',
       descripcion: 'Plantilla compartida que encapsula Sidebar, Header, Outlet y Footer con estado responsive de apertura.',
-      props: 'children / Outlet',
+      props: 'ninguna',
       hooks: ['useState (sidebarOpen)'],
       expanded: true,
       hijos: [
@@ -31,20 +31,20 @@ const initialTreeData = {
           hijos: [
             {
               id: 'navlink-items',
-              nombre: 'NavLink (Ítems)',
-              tipo: 'Componente de Enrutamiento',
-              descripcion: 'Enlaces a Inicio, Servicios, Clima, Árbol de Renderizado y Bitácora con clase activa dinámica.',
-              props: 'to: string, className: function',
-              hooks: ['useMatch', 'useResolvedPath'],
+              nombre: 'NavLink (Navegación)',
+              tipo: 'Elementos de React Router',
+              descripcion: 'Enlaces de navegación y perfiles definidos dentro de Sidebar; NavLink aplica la clase activa.',
+              props: 'to y className se configuran en Sidebar.jsx',
+              hooks: [],
               expanded: false,
               hijos: [],
             },
             {
               id: 'team-nav-links',
-              nombre: 'TeamLinks (Perfiles)',
-              tipo: 'Subnavegación Dinámica',
-              descripcion: 'Renderizado de avatar y enlaces hacia /perfil/:id para los 4 integrantes desde JSON.',
-              props: 'integrantes: array',
+              nombre: 'Enlaces a perfiles',
+              tipo: 'Elementos renderizados desde JSON',
+              descripcion: 'Sidebar recorre integrantes.json para mostrar avatares y enlaces a /perfil/:id.',
+              props: 'Los datos se importan desde integrantes.json',
               hooks: [],
               expanded: false,
               hijos: [],
@@ -65,26 +65,26 @@ const initialTreeData = {
           id: 'outlet',
           nombre: 'Outlet (React Router)',
           tipo: 'Contenedor de Vistas',
-          descripcion: 'Espacio dinámico donde se monta la página activa según la URL actual del navegador.',
-          props: 'context',
-          hooks: ['useOutlet'],
+          descripcion: 'Punto donde React Router muestra la página correspondiente a la URL actual.',
+          props: 'ninguna',
+          hooks: [],
           expanded: true,
           hijos: [
             {
               id: 'page-home',
               nombre: 'Home (Portada)',
               tipo: 'Página / Vista',
-              descripcion: 'Presentación de la consultora Grupo 14, sección Hero, métricas y grilla de integrantes.',
+              descripcion: 'Presentación de Grupo 14 con sección principal, métricas y tarjetas de integrantes generadas desde integrantes.json.',
               props: 'ninguna',
               hooks: ['useState (integranteDestacado)'],
               expanded: true,
               hijos: [
                 {
-                  id: 'card-team',
-                  nombre: 'TeamCard (Tarjetas de Miembro)',
-                  tipo: 'Componente de Tarjeta',
-                  descripcion: 'Renderiza foto, nombre, rol, badges de tecnologías y enlace directo a /perfil/:id.',
-                  props: 'integrante: object, onHover: function',
+                  id: 'team-cards',
+                  nombre: 'Tarjetas de integrantes',
+                  tipo: 'Elementos renderizados por Home',
+                  descripcion: 'Home recorre los datos de integrantes y muestra foto, nombre, rol, habilidades y enlace al perfil.',
+                  props: 'Datos importados desde integrantes.json',
                   hooks: [],
                   expanded: false,
                   hijos: [],
@@ -95,17 +95,17 @@ const initialTreeData = {
               id: 'page-profile',
               nombre: 'Profile (Perfil Reutilizable)',
               tipo: 'Página Dinámica',
-              descripcion: 'Vista unificada con pestañas de habilidades, semblanza, películas/discos y formulario de contacto.',
-              props: 'parámetro :id de ruta',
-              hooks: ['useParams', 'useState (activeTab, mensajeEnviado)'],
+              descripcion: 'Vista dinámica que busca al integrante por el parámetro de ruta y muestra sus datos, pestañas y formulario de contacto.',
+              props: 'Parámetro id leído con useParams',
+              hooks: ['useParams', 'useState (activeTab, mensajeEnviado, textoMensaje)'],
               expanded: false,
               hijos: [
                 {
-                  id: 'media-card',
-                  nombre: 'MediaCard (Películas y Discos)',
-                  tipo: 'Componente Multimedia',
-                  descripcion: 'Tarjetas con carátula, título y año de álbumes y películas favoritas de cada integrante.',
-                  props: 'item: object',
+                  id: 'profile-content',
+                  nombre: 'Contenido del perfil',
+                  tipo: 'Secciones renderizadas por Profile',
+                  descripcion: 'Profile muestra habilidades, biografía, películas, discos y contacto según la pestaña activa.',
+                  props: 'Datos del integrante seleccionado por id',
                   hooks: [],
                   expanded: false,
                   hijos: [],
@@ -116,17 +116,17 @@ const initialTreeData = {
               id: 'page-services',
               nombre: 'Services (Catálogo JSON)',
               tipo: 'Página de Datos Locales',
-              descripcion: 'Búsqueda en tiempo real, filtros por categoría y tecnología sobre 22 registros con estado vacío.',
-              props: 'serviciosData: array',
-              hooks: ['useState (searchTerm, category, expandedCards)', 'useMemo'],
+              descripcion: 'Importa los servicios desde JSON y ofrece búsqueda, filtros por categoría y tecnología, y estado vacío.',
+              props: 'Datos importados desde servicios_o_proyectos.json',
+              hooks: ['useState (searchTerm, selectedCategory, selectedTech, expandedCards)', 'useMemo'],
               expanded: true,
               hijos: [
                 {
-                  id: 'card-service',
-                  nombre: 'ServiceCard (Tarjetas Expandibles)',
-                  tipo: 'Componente de Tarjeta',
-                  descripcion: 'Renderizado interactivo de servicio con botón para expandir/contraer detalles técnicos.',
-                  props: 'servicio: object, isExpanded: boolean, onToggle: function',
+                  id: 'service-cards',
+                  nombre: 'Tarjetas de servicios',
+                  tipo: 'Elementos renderizados por Services',
+                  descripcion: 'Services genera una tarjeta por registro y permite desplegar sus detalles técnicos.',
+                  props: 'Datos de cada registro de servicios_o_proyectos.json',
                   hooks: [],
                   expanded: false,
                   hijos: [],
@@ -139,7 +139,7 @@ const initialTreeData = {
               tipo: 'Página de API Externa',
               descripcion: 'Consumo de Open-Meteo para CABA con 3 estados (Carga, Error, Éxito) y botón de reintento.',
               props: 'ninguna',
-              hooks: ['useState (data, loading, error)', 'useEffect', 'useCallback'],
+              hooks: ['useState (data, loading, error, ultimaActualizacion)', 'useEffect', 'useCallback'],
               expanded: false,
               hijos: [],
             },
@@ -149,7 +149,7 @@ const initialTreeData = {
               tipo: 'Página Interactiva',
               descripcion: 'Representación visual jerárquica con nodos interactivos que se expanden y contraen.',
               props: 'ninguna',
-              hooks: ['useState (treeData, selectedNode)'],
+              hooks: ['useState (treeData, selectedNode)', 'TreeNode recursivo'],
               expanded: false,
               hijos: [],
             },
@@ -157,9 +157,9 @@ const initialTreeData = {
               id: 'page-bitacora',
               nombre: 'Bitacora (Bitácora Grupal)',
               tipo: 'Página de Registro Histórico',
-              descripcion: 'Acordeón interactivo con las entradas del TP1 y TP2 con filtros por etapa de trabajo.',
-              props: 'bitacoraData: array',
-              hooks: ['useState (filtroEtapa, abiertoId)'],
+              descripcion: 'Importa las entradas de bitacora.json y ofrece filtros por etapa y acordeones desplegables.',
+              props: 'Datos importados desde bitacora.json',
+              hooks: ['useState (selectedEtapa, abiertos)', 'useMemo'],
               expanded: false,
               hijos: [],
             },
@@ -260,12 +260,12 @@ export default function ComponentTree() {
   return (
     <div className="tree-container animate-fade-in">
       <div className="tree-header">
-        <div className="badge badge-accent">Criterio 13 — Jerarquía Real de Componentes</div>
+        <div className="badge badge-accent">Criterio 13 — Estructura de Componentes</div>
         <h1 className="tree-title">Árbol de Renderizado de Componentes</h1>
         <p className="tree-desc">
-          Esta vista representa la <strong>jerarquía real de componentes</strong> de nuestra aplicación React en tiempo de ejecución.
+          Este esquema representa la <strong>jerarquía de componentes</strong> implementada en nuestra aplicación React.
           Podés <strong>expandir y contraer</strong> los nodos haciendo clic en los botones laterales o seleccionar cualquier elemento
-          para examinar sus responsabilidades, hooks y propiedades en el panel inspector.
+          para consultar su descripción, hooks y propiedades documentados en el panel inspector.
         </p>
       </div>
 
@@ -299,7 +299,7 @@ export default function ComponentTree() {
         <div className="tree-inspector-card">
           <div className="inspector-header">
             <h3>Inspector de Componente</h3>
-            <span className="inspector-status">Detalles en Vivo</span>
+            <span className="inspector-status">Detalle del elemento</span>
           </div>
 
           {selectedNode ? (
