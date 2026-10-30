@@ -17,6 +17,7 @@
 
 - [TP2 — Proyecto React en Equipo | Grupo 14](#tp2--proyecto-react-en-equipo--grupo-14)
   - [📑 Índice de Contenidos](#-índice-de-contenidos)
+  - [🖼️ Capturas del proyecto](#️-capturas-del-proyecto)
   - [👥 Integrantes del Equipo y Responsabilidades](#-integrantes-del-equipo-y-responsabilidades)
   - [🎯 Descripción y Objetivos del Proyecto](#-descripción-y-objetivos-del-proyecto)
   - [🚀 Funcionalidades y Criterios Cumplidos (Nivel Propone / Supera)](#-funcionalidades-y-criterios-cumplidos-nivel-propone--supera)
@@ -63,6 +64,20 @@ El proyecto **TP2: Proyecto React en Equipo** consiste en la evolución del port
 - **Criterio 13 — Árbol de Renderizado Dinámico:** Esquema interactivo que refleja fielmente la jerarquía real de componentes en ejecución (`App -> MainLayout -> Sidebar / Header -> Outlet -> Pages -> Cards`). Permite colapsar y expandir ramas mediante clic y cuenta con inspector de props y hooks en vivo.
 - **Criterio 14 — Bitácora Interactiva:** Historial de 10 entradas (4 de TP1 y 6 de TP2) estructuradas en acordeones desplegables con filtros por etapa de trabajo.
 - **Criterio 09 — Propuesta Estética Integral ("Supera"):** Coherencia gráfica completa basada en el TP1, reutilización de fotos y recursos multimedia originales, microinteracciones, contrastes certificados y variables CSS nativas.
+
+## 🖼️ Capturas del proyecto
+
+### Inicio — Portada del equipo
+
+![Portada de Grupo 14](public/capturas/inicio.png)
+
+### Perfil de integrante
+
+![Perfil de un integrante](public/capturas/perfil.png)
+
+### Servicios y proyectos
+
+![Catálogo de servicios con búsqueda y filtros](public/capturas/servicios.png)
 
 ---
 
